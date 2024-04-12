@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import json
 from streamlit_lottie import st_lottie
-import ClassifierModelsHeart
+from Classifier import ClassifierModelsHeart
 import pickle
 from PIL import Image
 import numpy as np
@@ -23,12 +23,12 @@ def load_lottiefile(filepath: str):
 #Loader data
 def read_data():
     delimiter = ';'
-    df = pd.read_csv("C:/Users/Basia/Desktop/dash/dataset/HeartDataset.csv", delimiter=delimiter)
+    df = pd.read_csv("dataset/HeartDataset.csv", delimiter=delimiter)
     df['Oldpeak'] = df['Oldpeak'].str.replace(',', '.').astype(float)
     return df
 
-#lottie_sider = load_lottiefile("C:/Users/Basia/Desktop/HeartHealthTrack/animations/hear.json")
-image = Image.open('C:/Users/Basia/Desktop/HeartHealthTrack/png/anatomical-heart_1fac0.png')
+#lottie_sider = load_lottiefile("animations/hear.json")
+image = Image.open('png/anatomical-heart_1fac0.png')
 
 
 #Sidebar
@@ -70,11 +70,11 @@ st.write("<p style='color:#171717'>Your input values are shown below:</p>",unsaf
 st.table(users_input)
 
 # Load models
-pickle_RandomForest = pickle.load(open('C:/Users/Basia/Desktop/HeartHealthTrack/pickle/heart_disease_modelRF.pkl', 'rb'))
-pickle_DecisionTree = pickle.load(open('C:/Users/Basia/Desktop/HeartHealthTrack/pickle/heart_disease_modelDT.pkl', 'rb'))
-pickle_KNN = pickle.load(open('C:/Users/Basia/Desktop/HeartHealthTrack/pickle/heart_disease_modelKNN.pkl', 'rb'))
-pickle_AdaBoost = pickle.load(open('C:/Users/Basia/Desktop/HeartHealthTrack/pickle/heart_disease_modelAB.pkl', 'rb'))
-pickle_LogisticRegression = pickle.load(open('C:/Users/Basia/Desktop/HeartHealthTrack/pickle/heart_disease_modelLR.pkl', 'rb'))
+pickle_RandomForest = pickle.load(open('pickle/heart_disease_modelRF.pkl', 'rb'))
+pickle_DecisionTree = pickle.load(open('pickle/heart_disease_modelDT.pkl', 'rb'))
+pickle_KNN = pickle.load(open('pickle/heart_disease_modelKNN.pkl', 'rb'))
+pickle_AdaBoost = pickle.load(open('pickle/heart_disease_modelAB.pkl', 'rb'))
+pickle_LogisticRegression = pickle.load(open('pickle/heart_disease_modelLR.pkl', 'rb'))
 
 #data
 heart_data = read_data()
