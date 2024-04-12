@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import json
 from streamlit_lottie import st_lottie
-from Classifier import ClassifierModelsHeart
+from Models import ClassifierModelsHeart
 import pickle
 from PIL import Image
 import numpy as np
