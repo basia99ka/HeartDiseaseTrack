@@ -13,7 +13,7 @@ import pickle
 
 def read_data():
     delimiter = ';'
-    df = pd.read_csv("C:/Users/Basia/Desktop/dash/dataset/HeartDataset.csv", delimiter=delimiter)
+    df = pd.read_csv("dataset/HeartDataset.csv", delimiter=delimiter)
     df['Oldpeak'] = df['Oldpeak'].str.replace(',', '.').astype(float)
     return df
 
