@@ -4,7 +4,7 @@ import json
 from streamlit_lottie import st_lottie
 from st_pages import show_pages, Page
 import time
-import ClassifierModelsHeart
+from ClassifierModels import ClassifierModelsHeart
 import pickle
 from PIL import Image
 from streamlit_toggle import st_toggle_switch
