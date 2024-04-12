@@ -129,6 +129,7 @@ def DecisionTree():
         st.write("<p style='color:#E62944; font-size:2rem; text-align:center;'>You have heart disease.</p>",unsafe_allow_html=True)
     else:
         st.write("<p style='color:#0054AB; font-size:2rem; text-align:center;'> You don't have heart disease</p>",unsafe_allow_html=True)
+    st.markdown("""---""")
     col1, col2 = st.columns(2)
     with col1:
         st.info("""
@@ -149,6 +150,8 @@ def KNN():
                  unsafe_allow_html=True)
     else:
         st.write("<p style='color:#0054AB; font-size:2rem; text-align:center;'> You don't have heart disease</p>",unsafe_allow_html=True)
+    
+    st.markdown("""---""")
     col1, col2 = st.columns(2)
     with col1:
         st.info("""The K-Nearest Neighbors (KNN) algorithm is a supervised machine learning method employed to tackle classification and regression problems.
@@ -168,6 +171,8 @@ def LogisticRegression():
         st.write("<p style='color:#E62944; font-size:2rem; text-align:center;'>You have heart disease.</p>",unsafe_allow_html=True)
     else:
         st.write("<p style='color:#0054AB; font-size:2rem; text-align:center;'> You don't have heart disease</p>",unsafe_allow_html=True)
+    
+    st.markdown("""---""")
     col1, col2 = st.columns(2)
     with col1:
         st.info("""Logistic regression is a supervised machine learning algorithm used for classification tasks where the goal is to predict the probability that an instance belongs to a given class or not. 
@@ -190,8 +195,7 @@ def AdaBoost():
         st.write("<p style='color:#E62944; font-size:2rem; text-align:center;'>You have heart disease.</p>",unsafe_allow_html=True)
     else:
         st.write("<p style='color:#0054AB; font-size:2rem; text-align:center;'> You don't have heart disease</p>",unsafe_allow_html=True)
-
-    st.write("AdaBoost classifaier")
+    st.markdown("""---""")
     col1, col2 = st.columns(2)
     with col1:
         st.info("**AdaBoost**, short for Adaptive Boosting, is an ensemble machine learning algorithm that can be used in a wide variety of classification and regression tasks. It is a supervised learning algorithm that is used to classify data by combining multiple weak or base learners (e.g., decision trees) into a strong learner. AdaBoost works by weighting the instances in the training dataset based on the accuracy of previous classifications. AdaBoost works by weighting the instances in the training dataset based on the accuracy of previous classifications.")
@@ -206,17 +210,12 @@ def AdaBoost():
 selected_model = st.selectbox(":gray[Select Model]",["Random Forrest", "K-Nearest Neighbors (KNN)","Decision Tree",
                                               "AdaBoost","Logistic Regression"], index=None, placeholder="Choose Model")
 if selected_model == "K-Nearest Neighbors (KNN)":
-    st.write("Executing K-Nearest Neighbors (KNN) prediction...")
     KNN()
 elif selected_model == "Random Forrest":
-    st.write("Executing Random Forrest prediction...")
     RandomForrest()
 elif selected_model == "Decision Tree":
-    st.write("Executing Decision Tree prediction...")
     DecisionTree()
 elif selected_model == "AdaBoost":
-    st.write("Executing AdaBoost prediction...")
     AdaBoost()
 elif selected_model == "Logistic Regression":
-    st.write("Executing Logistic Regression prediction...")
     LogisticRegression()
