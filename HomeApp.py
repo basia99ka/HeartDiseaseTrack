@@ -32,13 +32,13 @@ def load_lottiefile(filepath: str):
 #data loader
 def read_data():
     delimiter = ';'
-    df = pd.read_csv("C:/Users/Basia/Desktop/dash/dataset/HeartDataset.csv", delimiter=delimiter)
+    df = pd.read_csv("dataset/HeartDataset.csv", delimiter=delimiter)
     df['Oldpeak'] = df['Oldpeak'].str.replace(',', '.').astype(float)
     return df
 
 #files
 lottie_sider = load_lottiefile("C:/Users/Basia/Desktop/HeartHealthTrack/animations/logo_sider.json")
-image = Image.open('C:/Users/Basia/Desktop/HeartHealthTrack/png/anatomical-heart_1fac0.png')
+image = Image.open('png/anatomical-heart_1fac0.png')
 
 #sidebar
 with st.sidebar:
@@ -73,8 +73,8 @@ with st.sidebar:
 users_input = medical_data
 
 #files
-lottie_page = load_lottiefile("C:/Users/Basia/Desktop/HeartHealthTrack/animations/heart-pulse.json")
-lottie_prediction = load_lottiefile("C:/Users/Basia/Desktop/HeartHealthTrack/animations/heart_transparent.json")
+lottie_page = load_lottiefile("animations/heart-pulse.json")
+lottie_prediction = load_lottiefile("animations/heart_transparent.json")
 
 #page
 st.title("Heart Disease Detector")
