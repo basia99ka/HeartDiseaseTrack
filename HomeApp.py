@@ -37,7 +37,7 @@ def read_data():
     return df
 
 #files
-lottie_sider = load_lottiefile("C:/Users/Basia/Desktop/HeartHealthTrack/animations/logo_sider.json")
+lottie_sider = load_lottiefile("animations/logo_sider.json")
 image = Image.open('png/anatomical-heart_1fac0.png')
 
 #sidebar
