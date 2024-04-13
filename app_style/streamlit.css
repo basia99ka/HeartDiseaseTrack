@@ -166,6 +166,10 @@ color: white;
 background: linear-gradient(0deg, #2C3036 0%, #121820 76%);
 }
 
+.st-emotion-cache-1ec096l{
+border-radius:5px;
+}
+
 /*visibility menu*/
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
