@@ -13,6 +13,7 @@ Machine Learning algorithms used in project: **Random Forest, Decision Trees, Ad
 HeartDiseaseTrack Web App: https://heartdiseasetrack-mzgzcjsdhdy5xgfxewdl3b.streamlit.app/
 ## Screenshot
 - Main Page
+
 ![image](https://github.com/basia99ka/HeartDiseaseTrack/assets/165905205/6f2a3867-b791-49fb-ba60-f99fc47cd28d)
 
 ![image](https://github.com/basia99ka/HeartDiseaseTrack/assets/165905205/a26f607c-67a1-418f-882f-3ce509a95504)
