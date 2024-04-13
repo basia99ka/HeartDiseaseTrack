@@ -77,7 +77,7 @@ lottie_prediction = load_lottiefile("animations/heart_transparent.json")
 
 #page
 st.title("Heart Disease Detector")
-col1, col2 = st.columns([2,3])
+col1, col2 = st.columns([3,4])
 with col2:
     st_lottie(
         lottie_page,
