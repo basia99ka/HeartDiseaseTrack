@@ -40,12 +40,12 @@ with st.sidebar:
     Sex = st.selectbox('Sex', ('M', 'F'))
     ChestPainType = st.selectbox('Chest Pain Type', ('ASY', 'ATA', 'NAP', 'TA'))
     RestingBP = st.sidebar.slider('Resting Blood Pressure', 0, 200)
-    Cholesterol = st.slider('Cholesterol', 0, 603)
+    Cholesterol = st.slider('Cholesterol', 0, 600)
     FastingBS = st.slider('Fasting Blood Sugar', 0, 1)
     RestingECG = st.selectbox('Resting Electrocardiogram', ('Normal', 'ST', 'LVH'))
     MaxHR = st.slider('Maximum Heart Rate', 60, 202)
     ExerciseAngina = st.selectbox('ExerciseAngina', ('Y', 'N'))
-    Oldpeak = st.slider('Old peak', -2, 6)
+    Oldpeak = st.slider('Old peak', -2.6, 6.2, step=0.1)
     ST_Slope = st.selectbox('ST Slope', ('Up', 'Flat', 'Down'))
     data = {'Age': Age,
             'Sex': Sex,
