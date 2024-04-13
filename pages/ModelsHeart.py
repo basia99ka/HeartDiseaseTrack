@@ -64,6 +64,7 @@ users_input = medical_data
 
 #page
 st.title("Heart Disease Track")
+st.info(" Here you can explore other models built for prediction, see more information about the machine learning algorithms used and also evaluation of classification models.")
 st.info("⬅ Please input your data on the sidebar")
 st.markdown("""---""")
 st.write("<p style='color:#171717'>Your input values are shown below:</p>",unsafe_allow_html=True)
