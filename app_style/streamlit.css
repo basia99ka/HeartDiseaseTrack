@@ -149,6 +149,9 @@ font-size: 1.5rem;
 background: linear-gradient(0deg, #2C3036 0%, #121820 76%);
 border-radius: 5px;
 }
+.st-br {
+    border-radius: 9px;
+}
 .st-emotion-cache-l9bjmx p{
 color: white;
 font-weight:500;
