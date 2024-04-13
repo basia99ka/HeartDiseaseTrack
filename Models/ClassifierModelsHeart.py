@@ -55,17 +55,17 @@ def info_RandomForest():
     with col1:
         st.write("<p style='color:#171717; text-align:center;'> Feature Importance Plot </p>",
                  unsafe_allow_html=True)
-        fig = px.bar(importance_data_RF, x='Importance', y='Feature', orientation='h', title='Feature Importance Plot')
+        fig = px.bar(importance_data_RF, x='Importance', y='Feature', orientation='h')
         fig.update_yaxes(tickangle=90)
         fig.update_layout(
            yaxis=dict(tickangle=0),
            xaxis=dict(title='Importance'),
            plot_bgcolor='#121820',
            paper_bgcolor='#121820',
-           font=dict(family='Arial', size=12, color='white'),
+           font=dict(family='Arial', size=15, color='white'),
            height=600,
            width=800)
-        fig.update_traces(marker_color='#376DC2',
+        fig.update_traces(marker_color='#3A86FF',
                          marker_line_color='#20365B',
                          marker_line_width=1.5,
                          opacity=0.6)
@@ -77,13 +77,12 @@ def info_RandomForest():
                      labels=dict(x="Predicted Label", y="True Label", color="Count"),
                      x=['No Disease', 'Disease'],
                      y=['No Disease', 'Disease'],
-                     title='Confusion Matrix - Random Forrest',
                      )
         chart_RF.update_layout(
            coloraxis_colorbar=dict(title="Count"),
            plot_bgcolor = '#121820',
            paper_bgcolor = '#121820',
-           font = dict(family='Arial', size=12, color='white'),)
+           font = dict(family='Arial', size=15, color='white'),)
         chart_RF.update_xaxes(side="top")
         st.plotly_chart(chart_RF, use_container_width=True)
 
@@ -113,13 +112,12 @@ def info_KNN():
                              labels=dict(x="Predicted Label", y="True Label", color="Count"),
                              x=['No Disease', 'Disease'],
                              y=['No Disease', 'Disease'],
-                             title='Confusion Matrix -KNN',
                              )
         chart_KNN.update_layout(
             coloraxis_colorbar=dict(title="Count"),
             plot_bgcolor='#121820',
             paper_bgcolor='#121820',
-            font=dict(family='Arial', size=12, color='white'), )
+            font=dict(family='Arial', size=15, color='white'), )
         chart_KNN.update_xaxes(side="top")
         st.plotly_chart(chart_KNN, use_container_width=True)
 
@@ -147,17 +145,17 @@ def info_DecisionTree():
     with col1:
         st.write("<p style='color:#171717; text-align:center;'> Feature Importance Plot </p>",
                  unsafe_allow_html=True)
-        fig_DT = px.bar(importance_data_DT, x='Importance', y='Feature', orientation='h', title='Feature Importance Plot')
+        fig_DT = px.bar(importance_data_DT, x='Importance', y='Feature', orientation='h')
         fig_DT.update_yaxes(tickangle=90)
         fig_DT.update_layout(
            yaxis=dict(tickangle=0),
            xaxis=dict(title='Importance'),
            plot_bgcolor='#121820',
            paper_bgcolor='#121820',
-           font=dict(family='Arial', size=12, color='white'),
+           font=dict(family='Arial', size=15, color='white'),
            height=600,
            width=800)
-        fig_DT.update_traces(marker_color='#45608D',
+        fig_DT.update_traces(marker_color='#3A86FF',
                          marker_line_color='#20365B',
                          marker_line_width=1.5,
                          opacity=0.6)
@@ -169,13 +167,12 @@ def info_DecisionTree():
                      labels=dict(x="Predicted Label", y="True Label", color="Count"),
                      x=['No Disease', 'Disease'],
                      y=['No Disease', 'Disease'],
-                     title='Confusion Matrix - Random Forrest',
                      )
         chart_DT.update_layout(
            coloraxis_colorbar=dict(title="Count"),
            plot_bgcolor = '#121820',
            paper_bgcolor = '#121820',
-           font = dict(family='Arial', size=12, color='white'),)
+           font = dict(family='Arial', size=15, color='white'),)
         chart_DT.update_xaxes(side="top")
         st.plotly_chart(chart_DT, use_container_width=True)
 
@@ -202,17 +199,17 @@ def info_AdaBoost():
     with col1:
         st.write("<p style='color:#171717; text-align:center;'> Feature Importance Plot </p>",
                  unsafe_allow_html=True)
-        fig_AB = px.bar(importance_data_AB, x='Importance', y='Feature', orientation='h', title='Feature Importance Plot')
+        fig_AB = px.bar(importance_data_AB, x='Importance', y='Feature', orientation='h')
         fig_AB.update_yaxes(tickangle=90)
         fig_AB.update_layout(
            yaxis=dict(tickangle=0),
            xaxis=dict(title='Importance'),
            plot_bgcolor='#121820',
            paper_bgcolor='#121820',
-           font=dict(family='Arial', size=12, color='white'),
+           font=dict(family='Arial', size=15, color='white'),
            height=600,
            width=800)
-        fig_AB.update_traces(marker_color='#45608D',
+        fig_AB.update_traces(marker_color='#3A86FF',
                          marker_line_color='#20365B',
                          marker_line_width=1.5,
                          opacity=0.6)
@@ -224,13 +221,12 @@ def info_AdaBoost():
                      labels=dict(x="Predicted Label", y="True Label", color="Count"),
                      x=['No Disease', 'Disease'],
                      y=['No Disease', 'Disease'],
-                     title='Confusion Matrix - Random Forrest',
                      )
         chart_AB.update_layout(
            coloraxis_colorbar=dict(title="Count"),
            plot_bgcolor = '#121820',
            paper_bgcolor = '#121820',
-           font = dict(family='Arial', size=12, color='white'),)
+           font = dict(family='Arial', size=15, color='white'),)
         chart_AB.update_xaxes(side="top")
         st.plotly_chart(chart_AB, use_container_width=True)
 
@@ -261,13 +257,12 @@ def info_LogisticRegression():
                      labels=dict(x="Predicted Label", y="True Label", color="Count"),
                      x=['No Disease', 'Disease'],
                      y=['No Disease', 'Disease'],
-                     title='Confusion Matrix - Random Forrest',
                      )
         chart_LR.update_layout(
            coloraxis_colorbar=dict(title="Count"),
            plot_bgcolor = '#121820',
            paper_bgcolor = '#121820',
-           font = dict(family='Arial', size=12, color='white'),)
+           font = dict(family='Arial', size=15, color='white'),)
         chart_LR.update_xaxes(side="top")
         st.plotly_chart(chart_LR, use_container_width=True)
 
