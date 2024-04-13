@@ -53,7 +53,7 @@ with st.sidebar:
     RestingECG = st.selectbox('Resting Electrocardiogram', ('Normal', 'ST', 'LVH'))
     MaxHR = st.slider('Maximum Heart Rate', 60, 202)
     ExerciseAngina = st.selectbox('ExerciseAngina', ('Y', 'N'))
-    Oldpeak = st.slider('Old peak', -2.6, 6.2)
+    Oldpeak = st.slider('Old peak', -2.6, 6.2, step=0.1)
     ST_Slope = st.selectbox('ST Slope', ('Up', 'Flat', 'Down'))
 
     data = {'Age': Age,
