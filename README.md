@@ -12,18 +12,19 @@ Machine Learning algorithms used in project: **Random Forest, Decision Trees, Ad
 ## Demo
 HeartDiseaseTrack Web App: https://heartdiseasetrack-mzgzcjsdhdy5xgfxewdl3b.streamlit.app/
 ## Screenshot
-Main Page
+- Main Page
 ![image](https://github.com/basia99ka/HeartDiseaseTrack/assets/165905205/6f2a3867-b791-49fb-ba60-f99fc47cd28d)
+
 ![image](https://github.com/basia99ka/HeartDiseaseTrack/assets/165905205/a26f607c-67a1-418f-882f-3ce509a95504)
 
-![image](https://github.com/basia99ka/HeartDiseaseTrack/assets/165905205/0b534961-5512-4aa9-818d-f62725f4856c)
 ![image](https://github.com/basia99ka/HeartDiseaseTrack/assets/165905205/7b85b4f5-9082-4cab-accd-8a314fe496e4)
 
 ![image](https://github.com/basia99ka/HeartDiseaseTrack/assets/165905205/38ccc31f-b0f8-4e9c-b1f5-1c59f3fb0c63)
 
 ![image](https://github.com/basia99ka/HeartDiseaseTrack/assets/165905205/7bbdfe3d-84d0-4583-9199-11e1b53201a3)
-Page- Models
+- Page- Models
 ![image](https://github.com/basia99ka/HeartDiseaseTrack/assets/165905205/66615c28-9a98-49ec-bdf2-434c1da2e41b)
+
 ![image](https://github.com/basia99ka/HeartDiseaseTrack/assets/165905205/d1a0a6bc-417f-4bec-a051-2edbc70a481c)
 
 
