@@ -27,7 +27,6 @@ HeartDiseaseTrack Web App: https://heartdiseasetrack-mzgzcjsdhdy5xgfxewdl3b.stre
 
 ![image](https://github.com/basia99ka/HeartDiseaseTrack/assets/165905205/d1a0a6bc-417f-4bec-a051-2edbc70a481c)
 
-
-
+![image](https://github.com/basia99ka/HeartDiseaseTrack/assets/165905205/26507606-3c4f-4ba0-8e43-730630d74181)
 
 
