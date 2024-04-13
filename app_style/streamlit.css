@@ -65,14 +65,16 @@ border-radius:5px;
 }
 
 /*sidebar*/
-.st-emotion-cache-6qob1r{
+.st-emotion-cache-6qob1r, .st-c0 {
 background: linear-gradient(0deg, #2C3036 0%, #121820 76%);
 }
 
 .st-emotion-cache-2n7b7j,.st-emotion-cache-2n7b7j:hover {
     background: #E45D6B;
 }
-
+.st-bw, .st-bx, .st-by, .st-bz{
+    border-left-color: rgb(145 143 143);
+}
 h1{
     color: white;
     font-size: 4rem;
